@@ -108,7 +108,7 @@ export default function GeneratePage() {
       <section className="flex flex-1 items-center justify-center px-6">
       <div className="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-sm">
         
-        <h2 className="text-2xl font-semibold mb-4">
+        <h2 className="text-4xl font-semibold mb-4">
           Generate
           <span className="text-purple-600"> Recipe</span>
         </h2>
@@ -166,7 +166,7 @@ export default function GeneratePage() {
       Generating...
     </>
   ) : (
-    "Generate Recipe"
+    "Generate Recipe ✨"
   )}
 </button>
 {recipe && (

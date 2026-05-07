@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     }
 
     const prompt = `
-Generate 5 different recipes using these ingredients: ${ingredients.join(", ")}
+Generate 5 different indian styled recipes using these ingredients: ${ingredients.join(", ")}
 
 STRICT RULES:
 - Return ONLY valid JSON

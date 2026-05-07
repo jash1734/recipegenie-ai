@@ -198,9 +198,14 @@ export default function GenerateImagePage() {
                   disabled={loading}
                   className="flex-1 bg-purple-600 text-white py-3 rounded-2xl hover:bg-purple-700 transition cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading
-                    ? "Generating Recipes..."
-                    : "Generate Recipes ✨"}
+                  {loading ? (
+    <>
+      <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+      Generating...
+    </>
+  ) : (
+    "Generate Recipe ✨"
+  )}
                 </button>
 
               </div>

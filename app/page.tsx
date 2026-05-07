@@ -9,7 +9,7 @@ export default function Home() {
       
       <Header/>
       <section className="flex flex-1 items-center justify-center px-6">
-        <div className="max-w-4xl w-full grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl w-full grid md:grid-cols-2 gap-3 items-center">
           
           <div className="text-center md:text-left">
             <h2 className="text-4xl font-semibold leading-tight mb-4">
@@ -25,7 +25,11 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               
               <button onClick={() => router.push("/generate")} className="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition hover:shadow-md active:scale-95 cursor-pointer">
-                Start Generating Recipes
+                Generate from Ingredients
+              </button>
+
+              <button onClick={() => router.push("/generate-name")} className="bg-purple-600 text-white px-6 py-3 rounded-xl hover:bg-purple-700 transition hover:shadow-md active:scale-95 cursor-pointer">
+                Generate by Dish Name
               </button>
 
               <button onClick={() => router.push("/generate-image")} className="relative px-6 py-3 rounded-xl font-medium text-gray-900 border border-purple-600 bg-white overflow-hidden group hover:shadow-md active:scale-95">
